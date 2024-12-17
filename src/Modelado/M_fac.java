@@ -12,8 +12,8 @@ import javax.swing.JTextArea;
 
 public class M_fac {
     
-    Conectar con = new Conectar();
-    Connection cn =con.conexion();
+    Conectar conectardb = new Conectar();
+    Connection Conexiondb =conectardb.conexion();
     
     public void imprimir(JTextArea Area,String nom, String fecha, String va){
         Area.setText("\n"+nom+"\n "+fecha+"\n "+va);
@@ -31,7 +31,7 @@ public class M_fac {
             }
         }
         try{
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("INSERT INTO ventas(nombre, fecha, valor) VALUES (?, ?, ?)");
+            PreparedStatement query = (PreparedStatement) Conexiondb.prepareStatement("INSERT INTO ventas(nombre, fecha, valor) VALUES (?, ?, ?)");
             query.setString(1, nom);
             query.setString(2, fecha);
             query.setString(3, va);
