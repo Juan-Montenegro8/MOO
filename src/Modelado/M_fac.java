@@ -15,12 +15,12 @@ public class M_fac {
     Conectar conectardb = new Conectar();
     Connection Conexiondb =conectardb.conexion();
     
-    public void imprimir(JTextArea Area,String nom, String fecha, String va){
-        Area.setText("\n"+nom+"\n "+fecha+"\n "+va);
-        JFileChooser fc = new JFileChooser();
-        fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        if(JFileChooser.APPROVE_OPTION==fc.showSaveDialog(Area)){
-            File archivo = fc.getSelectedFile();
+    public void imprimir(JTextArea Area,String nombre, String fecha, String valor){
+        Area.setText("\n"+nombre+"\n "+fecha+"\n "+valor);
+        JFileChooser filleChooser = new JFileChooser();
+        filleChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        if(JFileChooser.APPROVE_OPTION==filleChooser.showSaveDialog(Area)){
+            File archivo = filleChooser.getSelectedFile();
             FileWriter fichero ;
             try {
                 fichero = new FileWriter(archivo, true) ;
@@ -31,10 +31,11 @@ public class M_fac {
             }
         }
         try{
-            PreparedStatement query = (PreparedStatement) Conexiondb.prepareStatement("INSERT INTO ventas(nombre, fecha, valor) VALUES (?, ?, ?)");
-            query.setString(1, nom);
+            PreparedStatement query = (PreparedStatement) Conexiondb
+            .prepareStatement("INSERT INTO ventas(nombre, fecha, valor) VALUES (?, ?, ?)");
+            query.setString(1, nombre);
             query.setString(2, fecha);
-            query.setString(3, va);
+            query.setString(3, valor);
             query.executeUpdate();
             JOptionPane.showMessageDialog(null, "OPERACION REALIZADA EXITOSAMENTE");
 
