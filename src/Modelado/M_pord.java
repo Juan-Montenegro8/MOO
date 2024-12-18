@@ -13,14 +13,14 @@ import javax.swing.JTextField;
 
 public class M_pord {
     
-    Conectar con = new Conectar();
-    Connection cn =con.conexion();
+    Conectar conectar = new Conectar();
+    Connection conectardb =conectar.conexion();
     
     
     
     public void agregar(String nom, String cant){
         try{
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("INSERT INTO productos(nombre, cantidad) VALUES (?, ?)");
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("INSERT INTO productos(nombre, cantidad) VALUES (?, ?)");
             query.setString(1, nom);
             query.setString(2, cant);
             
@@ -36,7 +36,7 @@ public class M_pord {
         I_prod win_p= new I_prod();
         int id ;
         try{
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("SELECT * FROM productos WHERE Nombre='"+txtnommbre.getText()+"'");
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM productos WHERE Nombre='"+txtnommbre.getText()+"'");
             ResultSet rs = query.executeQuery();
             
             if (rs.next()) {
@@ -56,7 +56,7 @@ public class M_pord {
     
     public void editar(String nom, String can, String lb){
         try{
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("UPDATE productos SET Nombre=?, Cantidad=? WHERE id_productos=?");
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("UPDATE productos SET Nombre=?, Cantidad=? WHERE id_productos=?");
             query.setString(1, nom);
             query.setString(2, can);
             query.setString(3, lb);
@@ -70,7 +70,7 @@ public class M_pord {
     
     public void elminar(String lbl){
         try{
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("DELETE FROM productos WHERE id_productos=?");
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("DELETE FROM productos WHERE id_productos=?");
             query.setString(1, lbl);
             query.executeUpdate();
             JOptionPane.showMessageDialog(null, "OPERACION REALIZADA EXITOSAMENTE");
