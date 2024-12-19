@@ -18,11 +18,11 @@ public class M_pord {
     
     
     
-    public void agregar(String nom, String cant){
+    public void agregar(String nombre, String cantidad){
         try{
             PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("INSERT INTO productos(nombre, cantidad) VALUES (?, ?)");
-            query.setString(1, nom);
-            query.setString(2, cant);
+            query.setString(1, nombre);
+            query.setString(2, cantidad);
             
             query.executeUpdate();
             JOptionPane.showMessageDialog(null, "OPERACION REALIZADA EXITOSAMENTE");
