@@ -33,18 +33,18 @@ public class M_pord {
     }
     
     public void buscar(JTextField txtnommbre){
-        I_prod win_p= new I_prod();
+        I_prod iProducto= new I_prod();
         int id ;
         try{
             PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM productos WHERE Nombre='"+txtnommbre.getText()+"'");
-            ResultSet rs = query.executeQuery();
+            ResultSet resultado = query.executeQuery();
             
-            if (rs.next()) {
-                win_p.txtnom.setText(rs.getString(2));
-                win_p.txtcan.setText(rs.getString(3));
-                id=rs.getInt(1);
-                win_p.lblid.setText(""+id);
-                win_p.setVisible(true);
+            if (resultado.next()) {
+                iProducto.txtnom.setText(resultado.getString(2));
+                iProducto.txtcan.setText(resultado.getString(3));
+                id=resultado.getInt(1);
+                iProducto.lblid.setText(""+id);
+                iProducto.setVisible(true);
             }       
             
         }catch(Exception e){
