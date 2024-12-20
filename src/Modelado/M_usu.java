@@ -14,29 +14,29 @@ public class M_usu {
     String p="",n="";
     Conectar conectar = new Conectar();
     Connection conectardb =conectar.conexion();
-    I_prin_admin pa= new I_prin_admin(); 
-    I_prin_bar pb= new I_prin_bar();
+    I_prin_admin Iadministrador= new I_prin_admin(); 
+    I_prin_bar Ibarbero= new I_prin_bar();
     
-    public void Ingresar(String user, String pass){
+    public void Ingresar(String usuario, String password){
         
         try {
-            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM usuario WHERE Nombre='"+user+"' AND Contras='"+pass+"'");
-            ResultSet rs = query.executeQuery();
-            if(rs.next()){
-                n=rs.getString(1);
-                p=rs.getString(2);
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM usuario WHERE Nombre='"+usuario+"' AND Contras='"+password+"'");
+            ResultSet result = query.executeQuery();
+            if(result.next()){
+                n=result.getString(1);
+                p=result.getString(2);
             }
-            if((n.equals(user))&&(p.equals(pass))){
-                if(user.equals("admin1")){
-                    pa.setVisible(true);
+            if((n.equals(usuario))&&(p.equals(password))){
+                if(usuario.equals("admin1")){
+                    Iadministrador.setVisible(true);
                 }else{
-                    if(user.equals("barbero")){
-                        pb.setVisible(true);
+                    if(usuario.equals("barbero")){
+                        Ibarbero.setVisible(true);
                     }
                 }
-                I_inicio o= new I_inicio();
-                o.setVisible(false);
-                o.hide();
+                I_inicio Iinicio= new I_inicio();
+                Iinicio.setVisible(false);
+                Iinicio.hide();
             }
         } catch (Exception e) {
            JOptionPane.showMessageDialog(null, "USUARIO O CONTRASEÑA INCORRECTA");
