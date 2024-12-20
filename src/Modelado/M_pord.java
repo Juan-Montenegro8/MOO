@@ -68,10 +68,10 @@ public class M_pord {
         }
     }
     
-    public void elminar(String lbl){
+    public void elminar(String lblid){
         try{
             PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("DELETE FROM productos WHERE id_productos=?");
-            query.setString(1, lbl);
+            query.setString(1, lblid);
             query.executeUpdate();
             JOptionPane.showMessageDialog(null, "OPERACION REALIZADA EXITOSAMENTE");
 
