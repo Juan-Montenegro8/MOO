@@ -54,12 +54,12 @@ public class M_pord {
         
     }
     
-    public void editar(String nom, String can, String lb){
+    public void editar(String nombre, String cantidad, String lblib){
         try{
             PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("UPDATE productos SET Nombre=?, Cantidad=? WHERE id_productos=?");
-            query.setString(1, nom);
-            query.setString(2, can);
-            query.setString(3, lb);
+            query.setString(1, nombre);
+            query.setString(2, cantidad);
+            query.setString(3, lblib);
             query.executeUpdate();
             JOptionPane.showMessageDialog(null, "OPERACION REALIZADA EXITOSAMENTE");
 
