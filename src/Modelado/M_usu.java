@@ -12,15 +12,15 @@ import javax.swing.JOptionPane;
 public class M_usu {
     
     String p="",n="";
-    Conectar con = new Conectar();
-    Connection cn =con.conexion();
+    Conectar conectar = new Conectar();
+    Connection conectardb =conectar.conexion();
     I_prin_admin pa= new I_prin_admin(); 
     I_prin_bar pb= new I_prin_bar();
     
     public void Ingresar(String user, String pass){
         
         try {
-            PreparedStatement query = (PreparedStatement) cn.prepareStatement("SELECT * FROM usuario WHERE Nombre='"+user+"' AND Contras='"+pass+"'");
+            PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM usuario WHERE Nombre='"+user+"' AND Contras='"+pass+"'");
             ResultSet rs = query.executeQuery();
             if(rs.next()){
                 n=rs.getString(1);
