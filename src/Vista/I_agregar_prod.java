@@ -31,9 +31,9 @@ public class I_agregar_prod extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanelagregarproducto = new javax.swing.JPanel();
+        lblnombre = new javax.swing.JLabel();
+        lblcantidad = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         txtcantidad = new javax.swing.JTextField();
         btnatras = new javax.swing.JButton();
@@ -42,12 +42,12 @@ public class I_agregar_prod extends javax.swing.JFrame {
         setLocation(new java.awt.Point(0, 0));
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Agregar Producto"));
+        jPanelagregarproducto.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelagregarproducto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Agregar Producto"));
 
-        jLabel1.setText("Nombre");
+        lblnombre.setText("Nombre");
 
-        jLabel2.setText("Cantidad");
+        lblcantidad.setText("Cantidad");
 
         txtnombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,8 +75,8 @@ public class I_agregar_prod extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelagregarproducto);
+        jPanelagregarproducto.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -84,8 +84,8 @@ public class I_agregar_prod extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(lblcantidad)
+                            .addComponent(lblnombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -104,11 +104,11 @@ public class I_agregar_prod extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(lblnombre)
                     .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblcantidad)
                     .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(btnagregar)
@@ -117,7 +117,7 @@ public class I_agregar_prod extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelagregarproducto);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,9 +184,9 @@ public class I_agregar_prod extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btnatras;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblnombre;
+    private javax.swing.JLabel lblcantidad;
+    private javax.swing.JPanel jPanelagregarproducto;
     private javax.swing.JTextField txtcantidad;
     private javax.swing.JTextField txtnombre;
     // End of variables declaration//GEN-END:variables
