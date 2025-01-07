@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class M_usu {
     
-    String p="",n="";
+    String passworddb="",usuariodb="";
     Conectar conectar = new Conectar();
     Connection conectardb =conectar.conexion();
     I_prin_admin Iadministrador= new I_prin_admin(); 
@@ -23,10 +23,10 @@ public class M_usu {
             PreparedStatement query = (PreparedStatement) conectardb.prepareStatement("SELECT * FROM usuario WHERE Nombre='"+usuario+"' AND Contras='"+password+"'");
             ResultSet result = query.executeQuery();
             if(result.next()){
-                n=result.getString(1);
-                p=result.getString(2);
+                usuariodb=result.getString(1);
+                passworddb=result.getString(2);
             }
-            if((n.equals(usuario))&&(p.equals(password))){
+            if((usuariodb.equals(usuario))&&(passworddb.equals(password))){
                 if(usuario.equals("admin1")){
                     Iadministrador.setVisible(true);
                 }else{
