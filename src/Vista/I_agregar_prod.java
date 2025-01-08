@@ -16,7 +16,7 @@ import Modelado.M_pord;
  */
 public class I_agregar_prod extends javax.swing.JFrame {
 
-    M_pord p= new M_pord();
+    M_pord ModeladoProducto= new M_pord();
     
     public I_agregar_prod() {
         initComponents();
@@ -137,10 +137,10 @@ public class I_agregar_prod extends javax.swing.JFrame {
     }//GEN-LAST:event_btnatrasActionPerformed
 
     private void btnagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnagregarActionPerformed
-        String nom= txtnombre.getText();
-        String cant = txtcantidad.getText();
+        String nombre= txtnombre.getText();
+        String cantidad = txtcantidad.getText();
         
-        p.agregar(nom, cant);
+        ModeladoProducto.agregar(nombre, cantidad);
         
         txtcantidad.setText("");
         txtnombre.setText("");
