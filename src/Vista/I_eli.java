@@ -29,59 +29,59 @@ public class I_eli extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        btnaceptar = new javax.swing.JButton();
-        btnatras = new javax.swing.JButton();
-        lbli = new javax.swing.JLabel();
+        jPanelEliminar = new javax.swing.JPanel();
+        btnAceptar = new javax.swing.JButton();
+        btnAtras = new javax.swing.JButton();
+        lblCero = new javax.swing.JLabel();
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Eliminar"));
+        jPanelEliminar.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelEliminar.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Eliminar"));
 
-        btnaceptar.setText("Aceptar");
-        btnaceptar.addActionListener(new java.awt.event.ActionListener() {
+        btnAceptar.setText("Aceptar");
+        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnaceptarActionPerformed(evt);
             }
         });
 
-        btnatras.setText("Atras");
-        btnatras.addActionListener(new java.awt.event.ActionListener() {
+        btnAtras.setText("Atras");
+        btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnatrasActionPerformed(evt);
             }
         });
 
-        lbli.setText("0");
+        lblCero.setText("0");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelEliminar);
+        jPanelEliminar.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(83, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbli, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCero, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnaceptar)
+                        .addComponent(btnAceptar)
                         .addGap(64, 64, 64)
-                        .addComponent(btnatras)))
+                        .addComponent(btnAtras)))
                 .addGap(107, 107, 107))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbli)
+                .addComponent(lblCero)
                 .addGap(44, 44, 44)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnatras)
-                    .addComponent(btnaceptar))
+                    .addComponent(btnAtras)
+                    .addComponent(btnAceptar))
                 .addContainerGap(64, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelEliminar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,7 +94,7 @@ public class I_eli extends javax.swing.JFrame {
 
     private void btnaceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaceptarActionPerformed
 
-        String lbl=lbli.getText();        
+        String lbl=lblCero.getText();        
         p.elminar(lbl);
         
     }//GEN-LAST:event_btnaceptarActionPerformed
@@ -135,9 +135,9 @@ public class I_eli extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnaceptar;
-    private javax.swing.JButton btnatras;
-    private javax.swing.JPanel jPanel1;
-    public javax.swing.JLabel lbli;
+    private javax.swing.JButton btnAceptar;
+    private javax.swing.JButton btnAtras;
+    private javax.swing.JPanel jPanelEliminar;
+    public javax.swing.JLabel lblCero;
     // End of variables declaration//GEN-END:variables
 }
