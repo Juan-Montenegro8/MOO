@@ -14,7 +14,7 @@ import Modelado.M_pord;
  */
 public class I_buscar extends javax.swing.JFrame {
 
-    M_pord p= new M_pord();
+    M_pord modeladoproducto= new M_pord();
     /**
      * Creates new form I_buscar
      */
@@ -85,7 +85,7 @@ public class I_buscar extends javax.swing.JFrame {
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
 
-        p.buscar(txtnommbre);
+        modeladoproducto.buscar(txtnommbre);
         
     }//GEN-LAST:event_btnbuscarActionPerformed
 
