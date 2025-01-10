@@ -15,7 +15,7 @@ import Modelado.M_pord;
  */
 public class I_eli extends javax.swing.JFrame {
 
-    M_pord p=new M_pord();
+    M_pord modeladoProuducto=new M_pord();
     public I_eli() {
         initComponents();
     }
@@ -95,7 +95,7 @@ public class I_eli extends javax.swing.JFrame {
     private void btnaceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaceptarActionPerformed
 
         String lbl=lblCero.getText();        
-        p.elminar(lbl);
+        modeladoProuducto.elminar(lbl);
         
     }//GEN-LAST:event_btnaceptarActionPerformed
 

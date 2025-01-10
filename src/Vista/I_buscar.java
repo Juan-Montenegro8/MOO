@@ -32,19 +32,19 @@ public class I_buscar extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelBUscarproducto = new javax.swing.JPanel();
-        lblnombre = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
         txtnommbre = new javax.swing.JTextField();
-        btnbuscar = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanelBUscarproducto.setBackground(new java.awt.Color(0, 153, 153));
         jPanelBUscarproducto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Buscar producto"));
 
-        lblnombre.setText("Nombre");
+        lblNombre.setText("Nombre");
 
-        btnbuscar.setText("Buscar");
-        btnbuscar.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbuscarActionPerformed(evt);
             }
@@ -58,12 +58,12 @@ public class I_buscar extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(lblnombre)
+                        .addComponent(lblNombre)
                         .addGap(37, 37, 37)
                         .addComponent(txtnommbre, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(140, 140, 140)
-                        .addComponent(btnbuscar)))
+                        .addComponent(btnBuscar)))
                 .addContainerGap(62, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -71,10 +71,10 @@ public class I_buscar extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(87, 87, 87)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnombre)
+                    .addComponent(lblNombre)
                     .addComponent(txtnommbre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
-                .addComponent(btnbuscar)
+                .addComponent(btnBuscar)
                 .addContainerGap(102, Short.MAX_VALUE))
         );
 
@@ -125,8 +125,8 @@ public class I_buscar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnbuscar;
-    private javax.swing.JLabel lblnombre;
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JLabel lblNombre;
     private javax.swing.JPanel jPanelBUscarproducto;
     private javax.swing.JTextField txtnommbre;
     // End of variables declaration//GEN-END:variables

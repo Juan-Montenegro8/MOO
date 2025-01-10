@@ -32,8 +32,8 @@ public class I_agregar_prod extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelagregarproducto = new javax.swing.JPanel();
-        lblnombre = new javax.swing.JLabel();
-        lblcantidad = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblCantidad = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         txtcantidad = new javax.swing.JTextField();
         btnatras = new javax.swing.JButton();
@@ -45,9 +45,9 @@ public class I_agregar_prod extends javax.swing.JFrame {
         jPanelagregarproducto.setBackground(new java.awt.Color(0, 153, 153));
         jPanelagregarproducto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Agregar Producto"));
 
-        lblnombre.setText("Nombre");
+        lblNombre.setText("Nombre");
 
-        lblcantidad.setText("Cantidad");
+        lblCantidad.setText("Cantidad");
 
         txtnombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,8 +84,8 @@ public class I_agregar_prod extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblcantidad)
-                            .addComponent(lblnombre))
+                            .addComponent(lblCantidad)
+                            .addComponent(lblNombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -104,11 +104,11 @@ public class I_agregar_prod extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnombre)
+                    .addComponent(lblNombre)
                     .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblcantidad)
+                    .addComponent(lblCantidad)
                     .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(btnagregar)
@@ -184,8 +184,8 @@ public class I_agregar_prod extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnagregar;
     private javax.swing.JButton btnatras;
-    private javax.swing.JLabel lblnombre;
-    private javax.swing.JLabel lblcantidad;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblCantidad;
     private javax.swing.JPanel jPanelagregarproducto;
     private javax.swing.JTextField txtcantidad;
     private javax.swing.JTextField txtnombre;
