@@ -32,10 +32,10 @@ public class I_factur extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         Area = new javax.swing.JTextArea();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jPanelFactura = new javax.swing.JPanel();
+        lblNombre = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
+        lblValor = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         txtfecha = new javax.swing.JTextField();
         txtvalor = new javax.swing.JTextField();
@@ -58,14 +58,14 @@ public class I_factur extends javax.swing.JFrame {
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Factura"));
+        jPanelFactura.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelFactura.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Factura"));
 
-        jLabel1.setText("Nombre");
+        lblNombre.setText("Nombre");
 
-        jLabel2.setText("Fecha");
+        lblFecha.setText("Fecha");
 
-        jLabel3.setText("Valor");
+        lblValor.setText("Valor");
 
         btnimprimir.setText("Imprimir");
         btnimprimir.addActionListener(new java.awt.event.ActionListener() {
@@ -74,8 +74,8 @@ public class I_factur extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelFactura);
+        jPanelFactura.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -83,9 +83,9 @@ public class I_factur extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))
+                            .addComponent(lblFecha)
+                            .addComponent(lblValor)
+                            .addComponent(lblNombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -101,22 +101,22 @@ public class I_factur extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(lblNombre)
                     .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblFecha)
                     .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(lblValor)
                     .addComponent(txtvalor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(btnimprimir)
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelFactura);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -173,10 +173,10 @@ public class I_factur extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea Area;
     private javax.swing.JButton btnimprimir;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblValor;
+    private javax.swing.JPanel jPanelFactura;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField txtfecha;
