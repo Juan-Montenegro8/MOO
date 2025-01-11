@@ -14,7 +14,7 @@ import Modelado.M_fac;
  */
 public class I_factur extends javax.swing.JFrame {
 
-    M_fac f= new M_fac();
+    M_fac modeladoFactura= new M_fac();
     
     public I_factur() {
         initComponents();
@@ -31,7 +31,7 @@ public class I_factur extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        Area = new javax.swing.JTextArea();
+        txtArea = new javax.swing.JTextArea();
         jPanelFactura = new javax.swing.JPanel();
         lblNombre = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
@@ -52,9 +52,9 @@ public class I_factur extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        Area.setColumns(20);
-        Area.setRows(5);
-        jScrollPane2.setViewportView(Area);
+        txtArea.setColumns(20);
+        txtArea.setRows(5);
+        jScrollPane2.setViewportView(txtArea);
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
@@ -127,7 +127,7 @@ public class I_factur extends javax.swing.JFrame {
         String fecha= txtfecha.getText();
         String va= txtvalor.getText();
         
-        f.imprimir(Area, nom, fecha, va);
+        modeladoFactura.imprimir(txtArea, nom, fecha, va);
         
         txtnombre.setText("");
         txtfecha.setText("");
@@ -171,7 +171,7 @@ public class I_factur extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea Area;
+    private javax.swing.JTextArea txtArea;
     private javax.swing.JButton btnimprimir;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblFecha;
