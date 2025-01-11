@@ -123,11 +123,11 @@ public class I_factur extends javax.swing.JFrame {
 
     private void btnimprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnimprimirActionPerformed
         
-        String nom= txtnombre.getText();
-        String fecha= txtfecha.getText();
-        String va= txtvalor.getText();
+        String Nombre= txtnombre.getText();
+        String Fecha= txtfecha.getText();
+        String Valor= txtvalor.getText();
         
-        modeladoFactura.imprimir(txtArea, nom, fecha, va);
+        modeladoFactura.imprimir(txtArea, Nombre, Fecha, Valor);
         
         txtnombre.setText("");
         txtfecha.setText("");
