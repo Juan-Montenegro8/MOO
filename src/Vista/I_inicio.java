@@ -17,18 +17,18 @@ public class I_inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanelIncio = new javax.swing.JPanel();
         lblNombre = new javax.swing.JLabel();
         lblpassword = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         btningresar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
-        txtpasss = new javax.swing.JPasswordField();
+        txtpassword = new javax.swing.JPasswordField();
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Inicio"));
+        jPanelIncio.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelIncio.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Inicio"));
 
         lblNombre.setText("Nombre");
 
@@ -48,8 +48,8 @@ public class I_inicio extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelIncio);
+        jPanelIncio.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -62,7 +62,7 @@ public class I_inicio extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtnombre, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
-                            .addComponent(txtpasss)))
+                            .addComponent(txtpassword)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(140, 140, 140)
                         .addComponent(btningresar))
@@ -81,7 +81,7 @@ public class I_inicio extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblpassword)
-                    .addComponent(txtpasss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(btningresar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
@@ -89,7 +89,7 @@ public class I_inicio extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelIncio);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -97,11 +97,11 @@ public class I_inicio extends javax.swing.JFrame {
     private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         
         String user = txtnombre.getText();
-        String pass = txtpasss.getText();
+        String pass = txtpassword.getText();
         u.Ingresar(user, pass);
         
         txtnombre.setText("");
-        txtpasss.setText("");
+        txtpassword.setText("");
         
     }//GEN-LAST:event_btningresarActionPerformed
 
@@ -149,8 +149,8 @@ public class I_inicio extends javax.swing.JFrame {
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblpassword;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelIncio;
     private javax.swing.JTextField txtnombre;
-    private javax.swing.JPasswordField txtpasss;
+    private javax.swing.JPasswordField txtpassword;
     // End of variables declaration//GEN-END:variables
 }
