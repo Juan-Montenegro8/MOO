@@ -18,8 +18,8 @@ public class I_inicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblpassword = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         btningresar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
@@ -30,9 +30,9 @@ public class I_inicio extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Inicio"));
 
-        jLabel1.setText("Nombre");
+        lblNombre.setText("Nombre");
 
-        jLabel2.setText("Contraseña");
+        lblpassword.setText("Contraseña");
 
         btningresar.setText("Ingresar");
         btningresar.addActionListener(new java.awt.event.ActionListener() {
@@ -57,8 +57,8 @@ public class I_inicio extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(lblpassword)
+                            .addComponent(lblNombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtnombre, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
@@ -76,11 +76,11 @@ public class I_inicio extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(lblNombre)
                     .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblpassword)
                     .addComponent(txtpasss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(btningresar)
@@ -147,8 +147,8 @@ public class I_inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btningresar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblpassword;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JPasswordField txtpasss;
