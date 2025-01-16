@@ -10,7 +10,7 @@ import Modelado.M_pord;
 
 public class I_modificar extends javax.swing.JFrame {
 
-    M_pord p= new M_pord();
+    M_pord modeladoProducto= new M_pord();
     public I_modificar() {
         initComponents();
     }
@@ -120,11 +120,11 @@ public class I_modificar extends javax.swing.JFrame {
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         
-        String nom = txtnombre.getText();
-        String can = txtcantidad.getText();
-        String lb = lbl.getText();
+        String nombre = txtnombre.getText();
+        String cantidad = txtcantidad.getText();
+        String lblcero = lbl.getText();
         
-        p.editar(nom, can, lb);
+        modeladoProducto.editar(nombre, cantidad, lblcero);
     }//GEN-LAST:event_btnguardarActionPerformed
 
     /**
