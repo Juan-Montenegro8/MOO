@@ -7,7 +7,7 @@ import Modelado.M_usu;
 public class I_inicio extends javax.swing.JFrame {
 
     
-    M_usu u=new M_usu();
+    M_usu modeloUsuario=new M_usu();
     public I_inicio() {
         initComponents();
     }
@@ -97,8 +97,8 @@ public class I_inicio extends javax.swing.JFrame {
     private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         
         String user = txtnombre.getText();
-        String pass = txtpassword.getText();
-        u.Ingresar(user, pass);
+        String password = txtpassword.getText();
+        modeloUsuario.Ingresar(user, password);
         
         txtnombre.setText("");
         txtpassword.setText("");
