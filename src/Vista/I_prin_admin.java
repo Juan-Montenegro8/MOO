@@ -32,10 +32,10 @@ public class I_prin_admin extends javax.swing.JFrame {
         lblBoricuas = new javax.swing.JLabel();
         jMenuBar4 = new javax.swing.JMenuBar();
         Productos = new javax.swing.JMenu();
-        Aprod = new javax.swing.JMenuItem();
-        Bprod = new javax.swing.JMenuItem();
-        Vender = new javax.swing.JMenu();
-        Gfactura = new javax.swing.JMenuItem();
+        MenuItemAgregarProucto = new javax.swing.JMenuItem();
+        MenuItemBuscarProducto = new javax.swing.JMenuItem();
+        MenuVender = new javax.swing.JMenu();
+        MenuItemGenerarFactura = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -77,38 +77,38 @@ public class I_prin_admin extends javax.swing.JFrame {
 
         Productos.setText("Productos");
 
-        Aprod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/Product-documentation-icon.png"))); // NOI18N
-        Aprod.setText("Agregar producto");
-        Aprod.addActionListener(new java.awt.event.ActionListener() {
+        MenuItemAgregarProucto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/Product-documentation-icon.png"))); // NOI18N
+        MenuItemAgregarProucto.setText("Agregar producto");
+        MenuItemAgregarProucto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AprodActionPerformed(evt);
             }
         });
-        Productos.add(Aprod);
+        Productos.add(MenuItemAgregarProucto);
 
-        Bprod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/search-icon.png"))); // NOI18N
-        Bprod.setText("Buscar Producto");
-        Bprod.addActionListener(new java.awt.event.ActionListener() {
+        MenuItemBuscarProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/search-icon.png"))); // NOI18N
+        MenuItemBuscarProducto.setText("Buscar Producto");
+        MenuItemBuscarProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BprodActionPerformed(evt);
             }
         });
-        Productos.add(Bprod);
+        Productos.add(MenuItemBuscarProducto);
 
         jMenuBar4.add(Productos);
 
-        Vender.setText("Vender");
+        MenuVender.setText("Vender");
 
-        Gfactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/sale-icon.png"))); // NOI18N
-        Gfactura.setText("Generar factura");
-        Gfactura.addActionListener(new java.awt.event.ActionListener() {
+        MenuItemGenerarFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/imagenes/sale-icon.png"))); // NOI18N
+        MenuItemGenerarFactura.setText("Generar factura");
+        MenuItemGenerarFactura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GfacturaActionPerformed(evt);
             }
         });
-        Vender.add(Gfactura);
+        MenuVender.add(MenuItemGenerarFactura);
 
-        jMenuBar4.add(Vender);
+        jMenuBar4.add(MenuVender);
 
         setJMenuBar(jMenuBar4);
 
@@ -169,11 +169,11 @@ public class I_prin_admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem Aprod;
-    private javax.swing.JMenuItem Bprod;
-    private javax.swing.JMenuItem Gfactura;
+    private javax.swing.JMenuItem MenuItemAgregarProucto;
+    private javax.swing.JMenuItem MenuItemBuscarProducto;
+    private javax.swing.JMenuItem MenuItemGenerarFactura;
     private javax.swing.JMenu Productos;
-    private javax.swing.JMenu Vender;
+    private javax.swing.JMenu MenuVender;
     private javax.swing.JLabel lblBienvenido;
     private javax.swing.JLabel lblBoricuas;
     private javax.swing.JMenuBar jMenuBar4;
