@@ -27,9 +27,9 @@ public class I_prin_admin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanelPrincipal = new javax.swing.JPanel();
+        lblBienvenido = new javax.swing.JLabel();
+        lblBoricuas = new javax.swing.JLabel();
         jMenuBar4 = new javax.swing.JMenuBar();
         Productos = new javax.swing.JMenu();
         Aprod = new javax.swing.JMenuItem();
@@ -40,40 +40,40 @@ public class I_prin_admin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Prin_admin"));
+        jPanelPrincipal.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelPrincipal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Prin_admin"));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setText("Bienvenido");
+        lblBienvenido.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblBienvenido.setText("Bienvenido");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Boricuas sistem");
+        lblBoricuas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblBoricuas.setText("Boricuas sistem");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelPrincipal);
+        jPanelPrincipal.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(82, 82, 82)
-                        .addComponent(jLabel1))
+                        .addComponent(lblBienvenido))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(124, 124, 124)
-                        .addComponent(jLabel2)))
+                        .addComponent(lblBoricuas)))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(69, 69, 69)
-                .addComponent(jLabel1)
+                .addComponent(lblBienvenido)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(lblBoricuas)
                 .addContainerGap(101, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelPrincipal);
 
         Productos.setText("Productos");
 
@@ -174,9 +174,9 @@ public class I_prin_admin extends javax.swing.JFrame {
     private javax.swing.JMenuItem Gfactura;
     private javax.swing.JMenu Productos;
     private javax.swing.JMenu Vender;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblBienvenido;
+    private javax.swing.JLabel lblBoricuas;
     private javax.swing.JMenuBar jMenuBar4;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelPrincipal;
     // End of variables declaration//GEN-END:variables
 }
