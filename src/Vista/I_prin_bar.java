@@ -27,9 +27,9 @@ public class I_prin_bar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblPinBar = new javax.swing.JPanel();
+        lblBienveniddo = new javax.swing.JLabel();
+        lblBoricuasSystem = new javax.swing.JLabel();
         jMenuBar4 = new javax.swing.JMenuBar();
         Productos = new javax.swing.JMenu();
         Aprod = new javax.swing.JMenuItem();
@@ -40,40 +40,40 @@ public class I_prin_bar extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "prin bar"));
+        lblPinBar.setBackground(new java.awt.Color(0, 153, 153));
+        lblPinBar.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "prin bar"));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setText("Bienvenido");
+        lblBienveniddo.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lblBienveniddo.setText("Bienvenido");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Boricuas sistem");
+        lblBoricuasSystem.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblBoricuasSystem.setText("Boricuas system");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(lblPinBar);
+        lblPinBar.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(85, 85, 85)
-                        .addComponent(jLabel1))
+                        .addComponent(lblBienveniddo))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(120, 120, 120)
-                        .addComponent(jLabel2)))
+                        .addComponent(lblBoricuasSystem)))
                 .addContainerGap(98, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(jLabel1)
+                .addComponent(lblBienveniddo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(lblBoricuasSystem)
                 .addContainerGap(112, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(lblPinBar);
 
         Productos.setText("Productos");
 
@@ -173,9 +173,9 @@ public class I_prin_bar extends javax.swing.JFrame {
     private javax.swing.JMenuItem Gfactura;
     private javax.swing.JMenu Productos;
     private javax.swing.JMenu Vender;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblBienveniddo;
+    private javax.swing.JLabel lblBoricuasSystem;
     private javax.swing.JMenuBar jMenuBar4;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel lblPinBar;
     // End of variables declaration//GEN-END:variables
 }
