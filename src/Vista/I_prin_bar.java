@@ -121,14 +121,14 @@ public class I_prin_bar extends javax.swing.JFrame {
     }//GEN-LAST:event_AprodActionPerformed
 
     private void BprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BprodActionPerformed
-        I_buscar o=new I_buscar();
-        o.setVisible(rootPaneCheckingEnabled);
+        I_buscar IBuscar=new I_buscar();
+        IBuscar.setVisible(rootPaneCheckingEnabled);
         
     }//GEN-LAST:event_BprodActionPerformed
 
     private void GfacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GfacturaActionPerformed
-        I_factur o=new I_factur();
-        o.setVisible(rootPaneCheckingEnabled);
+        I_factur IFactura=new I_factur();
+        IFactura.setVisible(rootPaneCheckingEnabled);
         
     }//GEN-LAST:event_GfacturaActionPerformed
 
