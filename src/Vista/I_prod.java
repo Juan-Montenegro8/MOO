@@ -129,7 +129,7 @@ public class I_prod extends javax.swing.JFrame {
         I_modificar o = new I_modificar();
         o.setVisible(rootPaneCheckingEnabled);
         this.hide();
-        o.lbl.setText(lblid.getText());
+        o.lblCero.setText(lblid.getText());
         o.txtnombre.setText(txtnom.getText());
         o.txtcantidad.setText(txtcan.getText());
     }//GEN-LAST:event_btneditarActionPerformed
@@ -138,7 +138,7 @@ public class I_prod extends javax.swing.JFrame {
         I_eli o= new I_eli();
         o.setVisible(rootPaneCheckingEnabled);
         this.hide();
-        o.lbli.setText(lblid.getText());
+        o.lblCero.setText(lblid.getText());
     }//GEN-LAST:event_btneliminarActionPerformed
 
     /**
