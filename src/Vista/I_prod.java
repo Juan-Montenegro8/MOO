@@ -28,10 +28,10 @@ public class I_prod extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtnom = new javax.swing.JTextField();
-        txtcan = new javax.swing.JTextField();
+        lblNombre = new javax.swing.JLabel();
+        lblCantidad = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtCantidad = new javax.swing.JTextField();
         btneditar = new javax.swing.JButton();
         btneliminar = new javax.swing.JButton();
         lblid = new javax.swing.JLabel();
@@ -41,18 +41,18 @@ public class I_prod extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Producto"));
 
-        jLabel1.setText("Nombre");
+        lblNombre.setText("Nombre");
 
-        jLabel2.setText("Cantidad");
+        lblCantidad.setText("Cantidad");
 
-        txtnom.setEnabled(false);
-        txtnom.addActionListener(new java.awt.event.ActionListener() {
+        txtNombre.setEnabled(false);
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnomActionPerformed(evt);
             }
         });
 
-        txtcan.setEnabled(false);
+        txtCantidad.setEnabled(false);
 
         btneditar.setText("Editar");
         btneditar.addActionListener(new java.awt.event.ActionListener() {
@@ -79,12 +79,12 @@ public class I_prod extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(64, 64, 64)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(lblCantidad)
+                            .addComponent(lblNombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtnom, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtcan, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(btneditar)
@@ -103,12 +103,12 @@ public class I_prod extends javax.swing.JFrame {
                 .addComponent(lblid)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtnom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNombre)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtcan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCantidad)
+                    .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btneditar)
@@ -130,8 +130,8 @@ public class I_prod extends javax.swing.JFrame {
         o.setVisible(rootPaneCheckingEnabled);
         this.hide();
         o.lblCero.setText(lblid.getText());
-        o.txtnombre.setText(txtnom.getText());
-        o.txtcantidad.setText(txtcan.getText());
+        o.txtnombre.setText(txtNombre.getText());
+        o.txtcantidad.setText(txtCantidad.getText());
     }//GEN-LAST:event_btneditarActionPerformed
 
     private void btneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminarActionPerformed
@@ -179,11 +179,11 @@ public class I_prod extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btneditar;
     private javax.swing.JButton btneliminar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblCantidad;
     public javax.swing.JPanel jPanel1;
     public javax.swing.JLabel lblid;
-    public javax.swing.JTextField txtcan;
-    public javax.swing.JTextField txtnom;
+    public javax.swing.JTextField txtCantidad;
+    public javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
