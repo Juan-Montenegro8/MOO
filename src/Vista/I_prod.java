@@ -27,7 +27,7 @@ public class I_prod extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanelProducto = new javax.swing.JPanel();
         lblNombre = new javax.swing.JLabel();
         lblCantidad = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
@@ -38,8 +38,8 @@ public class I_prod extends javax.swing.JFrame {
 
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Producto"));
+        jPanelProducto.setBackground(new java.awt.Color(0, 153, 153));
+        jPanelProducto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4), "Producto"));
 
         lblNombre.setText("Nombre");
 
@@ -70,8 +70,8 @@ public class I_prod extends javax.swing.JFrame {
 
         lblid.setText("0");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanelProducto);
+        jPanelProducto.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -116,7 +116,7 @@ public class I_prod extends javax.swing.JFrame {
                 .addGap(65, 65, 65))
         );
 
-        getContentPane().add(jPanel1);
+        getContentPane().add(jPanelProducto);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -126,19 +126,19 @@ public class I_prod extends javax.swing.JFrame {
     }//GEN-LAST:event_txtnomActionPerformed
 
     private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
-        I_modificar o = new I_modificar();
-        o.setVisible(rootPaneCheckingEnabled);
+        I_modificar objModificar = new I_modificar();
+        objModificar.setVisible(rootPaneCheckingEnabled);
         this.hide();
-        o.lblCero.setText(lblid.getText());
-        o.txtnombre.setText(txtNombre.getText());
-        o.txtcantidad.setText(txtCantidad.getText());
+        objModificar.lblCero.setText(lblid.getText());
+        objModificar.txtnombre.setText(txtNombre.getText());
+        objModificar.txtcantidad.setText(txtCantidad.getText());
     }//GEN-LAST:event_btneditarActionPerformed
 
     private void btneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminarActionPerformed
-        I_eli o= new I_eli();
-        o.setVisible(rootPaneCheckingEnabled);
+        I_eli objEliminar= new I_eli();
+        objEliminar.setVisible(rootPaneCheckingEnabled);
         this.hide();
-        o.lblCero.setText(lblid.getText());
+        objEliminar.lblCero.setText(lblid.getText());
     }//GEN-LAST:event_btneliminarActionPerformed
 
     /**
@@ -181,7 +181,7 @@ public class I_prod extends javax.swing.JFrame {
     private javax.swing.JButton btneliminar;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblCantidad;
-    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanelProducto;
     public javax.swing.JLabel lblid;
     public javax.swing.JTextField txtCantidad;
     public javax.swing.JTextField txtNombre;
